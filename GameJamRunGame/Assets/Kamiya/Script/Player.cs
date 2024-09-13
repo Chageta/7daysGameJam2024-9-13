@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
 
     private float m_MoveHorizontal;
     private float m_MoveVertical;
+
     private Rigidbody m_RigidBody;
 
     void Start()
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
 
         // 移動（加速、減速、停止）の処理
         MoveVertical();
+
+        // 右か左に方向転換する処理
+        RotateHorizontal();
     }
 
     private void InputGetAxis()
@@ -54,6 +58,20 @@ public class Player : MonoBehaviour
             m_Speed.z = Mathf.Clamp(m_Speed.z, 0, m_MaxSpeed.z);
         }
         // 移動処理
-        transform.position += m_Speed * Time.deltaTime;
+        transform.position += transform.forward * m_Speed.z * Time.deltaTime;
+    }
+
+    private void RotateHorizontal()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            // 右に回転させる
+            transform.Rotate(0, 90, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            // 左に回転させる
+            transform.Rotate(0, -90, 0);
+        }
     }
 }
