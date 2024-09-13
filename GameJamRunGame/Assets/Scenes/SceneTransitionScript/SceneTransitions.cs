@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
 {
-    [SerializeField]
-    private string sceneName_ = "";
+    private FadeSceneLoader m_FadeSceneLoader;
 
+    [SerializeField] private string sceneName_ = "";
+
+    private void Start()
+    {
+        m_FadeSceneLoader = GetComponent<FadeSceneLoader>();
+
+    }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(sceneName_);
+            m_FadeSceneLoader.CallCoroutine(sceneName_);
         }
     }
 }
