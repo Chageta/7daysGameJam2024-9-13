@@ -14,7 +14,7 @@ public class InputCommand : MonoBehaviour
     int currentCommandIndex;
     int[] commands;
     bool commandFailureWait = false;
-    readonly KeyCode[] commandKeys = new KeyCode[4]
+    readonly KeyCode[] kCommandKeys = new KeyCode[4]
     {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
     struct CommandLength
     {
@@ -28,10 +28,6 @@ public class InputCommand : MonoBehaviour
     readonly CommandLength[] kDifficulty = new CommandLength[3]
     {new(4,6),new(5,7),new(6,8)};
 
-    private void Start()
-    {
-        BeginCommand();
-    }
     public void BeginCommand()
     {
         commands = new int[Random.Range(kDifficulty[0].minLength, kDifficulty[1].maxLength)];
@@ -59,7 +55,7 @@ public class InputCommand : MonoBehaviour
             yield return new WaitUntil(() => Input.anyKeyDown);
             if (!IsValidInput()) continue;
 
-            if (Input.GetKeyDown(commandKeys[commands[currentCommandIndex]]))
+            if (Input.GetKeyDown(kCommandKeys[commands[currentCommandIndex]]))
             {
                 ui.CommandHit(++currentCommandIndex);
             }
@@ -70,6 +66,7 @@ public class InputCommand : MonoBehaviour
                 yield break;
             }
         }
+        ui.SetActive(false);
         OnCommandSuccess.Invoke();
     }
     public void EndCommandFailureWait()
@@ -78,11 +75,11 @@ public class InputCommand : MonoBehaviour
     }
     bool IsValidInput()
     {
-        foreach (var key in commandKeys)
+        foreach (var key in kCommandKeys)
         {
             if (Input.GetKeyDown(key)) return true;
         }
-        Debug.Log("Input Not Valid");
+        Debug.Log("[Command]Input Not Valid");
         return false;
     }
 }
