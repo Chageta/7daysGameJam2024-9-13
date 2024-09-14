@@ -12,7 +12,7 @@ public class CrowdControler : MonoBehaviour
     CinemachineVirtualCamera[] cameras;
     int currentDirection, nextDirection;
     int moveSpeed = 1;
-    readonly int[] kMoveSpeeds = { 0, 3, 7 };
+    readonly int[] kMoveSpeeds = { 0, 4, 8 };
 
     readonly KeyCode[] kMoveKeys = new KeyCode[4]
     {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
@@ -24,13 +24,18 @@ public class CrowdControler : MonoBehaviour
     [SerializeField]
     GameObject[] moveArrows, determinationArrows;
 
-    private void Awake()
+    public void InitializeCrowd(Vector3 position, int direction)
     {
-        determination = crowd.position;
+        crowd.position = determination = position;
+        currentDirection = direction;
         CalcDetermination();
+    }
+    public void BeginMove()
+    {
         StartCoroutine("Move");
         BeginControl();
     }
+
     public void BeginControl()
     {
         EndControl();
