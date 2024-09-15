@@ -3578,7 +3578,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303111655}
-  m_Layer: 0
+  - component: {fileID: 303111656}
+  - component: {fileID: 303111657}
+  m_Layer: 7
   m_Name: Crowd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3605,6 +3607,51 @@ Transform:
   - {fileID: 1033581486}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &303111656
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303111654}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &303111657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303111654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058aa244c6e4fb5439a13ca846101ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crowd: {fileID: 303111655}
+  cameras:
+  - {fileID: 289630100}
+  - {fileID: 2081410212}
+  - {fileID: 47676798}
+  - {fileID: 808522442}
+  moveArrows: []
+  determinationArrows: []
+  zombieCrowd: {fileID: 1033581487}
+  ActorPrefab: {fileID: 2402273000880624115, guid: ce847f2e856c4bd42b0adf470490fb90,
+    type: 3}
+  crowdUI: {fileID: 961814588}
 --- !u!1001 &319329801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3956,8 +4003,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
-  m_LocalPosition: {x: 0, y: 25, z: 20}
+  m_LocalRotation: {x: 0.27059805, y: 0.6532815, z: -0.27059805, w: 0.6532815}
+  m_LocalPosition: {x: -20, y: 25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14677,7 +14724,7 @@ MonoBehaviour:
   - {fileID: 409295910643762361, guid: 97f59155ab8b5754b98d8a3db7c06673, type: 3}
   stadiumPrefab: {fileID: 878539741156179889, guid: a1d3800f025b7c9488d1eb92ed96d54b,
     type: 3}
-  crowd: {fileID: 1836703750}
+  crowd: {fileID: 303111657}
 --- !u!1001 &1420768311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20018,7 +20065,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1836703751}
   - component: {fileID: 1836703752}
-  - component: {fileID: 1836703750}
   - component: {fileID: 1836703749}
   m_Layer: 0
   m_Name: Player
@@ -20054,7 +20100,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1836703750}
+      - m_Target: {fileID: 303111657}
         m_TargetAssemblyTypeName: CrowdControler, Assembly-CSharp
         m_MethodName: ReviveAllZombies
         m_Mode: 1
@@ -20082,30 +20128,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   ui: {fileID: 1035448730}
---- !u!114 &1836703750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836703748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058aa244c6e4fb5439a13ca846101ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crowd: {fileID: 303111655}
-  cameras:
-  - {fileID: 289630100}
-  - {fileID: 2081410212}
-  - {fileID: 47676798}
-  - {fileID: 808522442}
-  moveArrows: []
-  determinationArrows: []
-  zombieCrowd: {fileID: 1033581487}
-  ActorPrefab: {fileID: 2402273000880624115, guid: ce847f2e856c4bd42b0adf470490fb90,
-    type: 3}
-  crowdUI: {fileID: 961814588}
 --- !u!4 &1836703751
 Transform:
   m_ObjectHideFlags: 0
@@ -20133,7 +20155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f61c97e8643944aa862fe1cc924e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crowd: {fileID: 1836703750}
+  crowd: {fileID: 303111657}
   command: {fileID: 1836703749}
 --- !u!1001 &1864981684
 PrefabInstance:

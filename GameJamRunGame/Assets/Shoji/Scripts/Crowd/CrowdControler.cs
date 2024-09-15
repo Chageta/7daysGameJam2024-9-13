@@ -163,5 +163,10 @@ public class CrowdControler : MonoBehaviour
     {
         crowdUI.SetCount(actors.Count - zombieCrowd.ZombieCount, zombieCrowd.ZombieCount);
     }
+    public void Stop()
+    {
+        StopAllCoroutines();
+        actors.ForEach(a => a.SetMoveSpeed(0));
+    }
     public bool HasZombie => zombieCrowd.HasZombie;
 }
