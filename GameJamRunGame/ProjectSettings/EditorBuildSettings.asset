@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/main/SelectScene.unity
     guid: 4deef8c5e7d137c45b1e43e180902deb
   - enabled: 1
-    path: Assets/Scenes/main/GamePlayScene.unity
-    guid: 054b4cf0e507f8d46bcf0d59125951f0
+    path: Assets/Shoji/Scenes/GamePlayScene.unity
+    guid: f08ae057245c2b344aa8e6fc2b0437bb
   m_configObjects: {}

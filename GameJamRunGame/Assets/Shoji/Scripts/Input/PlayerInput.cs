@@ -28,11 +28,13 @@ public class PlayerInput : MonoBehaviour
         {
             yield return new WaitUntil(() => Input.anyKeyDown);
             if (!Input.GetKeyDown(KeyCode.Space)) continue;
-            commandMode ^= true;
-            if (commandMode)
+
+            if (!commandMode)
             {
+                if (!crowd.HasZombie) continue;
                 crowd.EndControl();
                 command.BeginCommand();
+                commandMode = true;
             }
             else
             {

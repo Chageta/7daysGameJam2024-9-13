@@ -2,12 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor.Rendering.LookDev;
 
 public class FadeSceneLoader : MonoBehaviour
 {
-    [SerializeField] private string sceneName_ = "";
-
+    [SerializeField] private string sceneName;
     [SerializeField] private Image fadePanel;             // フェード用のUIパネル（Image）
     [SerializeField] private float fadeDuration = 1.0f;   // フェードの完了にかかる時間
     // Update is called once per frame
@@ -22,9 +20,8 @@ public class FadeSceneLoader : MonoBehaviour
         }
     }
 
-    public void CallCoroutine(string sceneName)
+    public void TransitionScene()
     {
-        sceneName_ = sceneName; // sceneName_ を設定
         StartCoroutine(FadeOutAndLoadScene());
     }
 
@@ -53,7 +50,7 @@ public class FadeSceneLoader : MonoBehaviour
 
         fadePanel.color = endColor;  // フェードが完了したら最終色に設定
         m_IsFadeIn = true;
-        SceneManager.LoadScene(sceneName_); // シーンをロードしてメニューシーンに遷移
+        SceneManager.LoadScene(sceneName); // シーンをロードしてメニューシーンに遷移
 
     }
 

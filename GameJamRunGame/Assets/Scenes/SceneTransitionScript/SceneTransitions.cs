@@ -1,35 +1,24 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
 {
+    [SerializeField]
     private FadeSceneLoader m_FadeSceneLoader;
-
-    private Countdown m_Countdown;
-
-    [SerializeField] private string sceneName_ = "";
 
     private void Start()
     {
-        m_FadeSceneLoader = GetComponent<FadeSceneLoader>();
-
-        m_Countdown = GameObject.Find("Timer")?.GetComponent<Countdown>();
-
+        StartCoroutine(WaitForInput());
     }
     // Update is called once per frame
-    void Update()
+    IEnumerator WaitForInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        while (true)
         {
-            if (m_Countdown == null || (m_Countdown != null && m_Countdown.IsStart == true))
-            {
-                m_FadeSceneLoader.CallCoroutine(sceneName_);
-            }
+            yield return new WaitUntil(() => Input.anyKeyDown);
+            if (!Input.GetKeyDown(KeyCode.Space)) continue;
+            m_FadeSceneLoader.TransitionScene();
         }
     }
-
-
 }

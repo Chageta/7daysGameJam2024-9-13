@@ -24,11 +24,44 @@ public class CrowdControler : MonoBehaviour
     [SerializeField]
     GameObject[] moveArrows, determinationArrows;
 
+    [SerializeField]
+    ZombieCrowd zombieCrowd;
+
+    [SerializeField]
+    GameObject ActorPrefab;
+    const int kInitialActorCount = 10;
+
+    List<CrowdActor> actors = new();
+
+    [SerializeField]
+    CrowdUI crowdUI;
+
     public void InitializeCrowd(Vector3 position, int direction)
     {
         crowd.position = determination = position;
         currentDirection = direction;
         CalcDetermination();
+
+        for (int i = 0; i < kInitialActorCount; i++)
+        {
+            Vector3 actorPosition = crowd.position;
+            actorPosition += new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+            CrowdActor actor = Instantiate(ActorPrefab, actorPosition, Quaternion.Euler(0, 45, 0), crowd).GetComponent<CrowdActor>();
+            actors.Add(actor);
+            actor.Initialize(this, moveSpeed);
+            actor.LookDirection(kMoveDirections[currentDirection]);
+            UpdateUI();
+        }
+    }
+    public void AddCrowdActors(CrowdActor[] newActors)
+    {
+        foreach (var actor in newActors)
+        {
+            actor.Initialize(this, moveSpeed);
+            actor.LookDirection(kMoveDirections[currentDirection]);
+        }
+        actors.AddRange(newActors);
+        UpdateUI();
     }
     public void BeginMove()
     {
@@ -55,8 +88,13 @@ public class CrowdControler : MonoBehaviour
 
             if (input < 2)
             {
+                bool cannotStop = input == 1 && zombieCrowd.HasZombie;
+                if (cannotStop) continue;
+
                 nextDirection = 0;
                 moveSpeed = Mathf.Clamp(moveSpeed + (input == 0 ? 1 : -1), 0, 2);
+
+                actors.ForEach(a => a.SetMoveSpeed(moveSpeed));
             }
             else
             {
@@ -70,20 +108,26 @@ public class CrowdControler : MonoBehaviour
         {
             if (Input.GetKeyDown(kMoveKeys[i])) return i;
         }
-        Debug.Log("[Crowd]Input Not Valid");
+        //Debug.Log("[Crowd]Input Not Valid");
         return -1;
     }
     IEnumerator Move()
     {
         while (true)
         {
+            MoveUntilDead();
+            CalcDetermination();
+            actors.ForEach(a => a.LookDirection(kMoveDirections[currentDirection]));
             while ((determination - crowd.position).sqrMagnitude > 0.01f)
             {
                 crowd.position = Vector3.MoveTowards(crowd.position, determination, kMoveSpeeds[moveSpeed] * Time.deltaTime);
                 yield return null;
             }
-            CalcDetermination();
         }
+    }
+    void MoveUntilDead()
+    {
+        actors.ForEach(a => a.MoveUntilDead(kMoveDirections[currentDirection] * kMoveSpeeds[moveSpeed]));
     }
     void CalcDetermination()
     {
@@ -101,4 +145,23 @@ public class CrowdControler : MonoBehaviour
         float multiply = Vector3.SqrMagnitude(currentIntersection - nextIntersection) < 1 ? 16 : 64;
         determination += kMoveDirections[currentDirection] * multiply;
     }
+    public void TurnIntoZombie(CrowdActor actor)
+    {
+        actor.transform.SetParent(zombieCrowd.transform, true);
+        UpdateUI();
+    }
+    public void ReviveAllZombies()
+    {
+        actors.ForEach(a => { a.Revive(); a.LookDirection(kMoveDirections[currentDirection]); a.transform.SetParent(crowd, true); });
+        UpdateUI();
+    }
+    public void OnActorDead(CrowdActor actor)
+    {
+        actors.Remove(actor);
+    }
+    void UpdateUI()
+    {
+        crowdUI.SetCount(actors.Count - zombieCrowd.ZombieCount, zombieCrowd.ZombieCount);
+    }
+    public bool HasZombie => zombieCrowd.HasZombie;
 }

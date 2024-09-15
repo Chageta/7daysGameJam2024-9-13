@@ -16,21 +16,10 @@ public class InputCommand : MonoBehaviour
     bool commandFailureWait = false;
     readonly KeyCode[] kCommandKeys = new KeyCode[4]
     {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
-    struct CommandLength
-    {
-        public int minLength, maxLength;
-        public CommandLength(int minLength, int maxLength)
-        {
-            this.minLength = minLength;
-            this.maxLength = maxLength;
-        }
-    }
-    readonly CommandLength[] kDifficulty = new CommandLength[3]
-    {new(4,6),new(5,7),new(6,8)};
-
+    
     public void BeginCommand()
     {
-        commands = new int[Random.Range(kDifficulty[0].minLength, kDifficulty[1].maxLength)];
+        commands = new int[3];//new int[DifficultyManager.Instance.CommandLength];
         for (int i = 0; i < commands.Length; i++)
         {
             commands[i] = Random.Range(0, 4);
@@ -79,7 +68,7 @@ public class InputCommand : MonoBehaviour
         {
             if (Input.GetKeyDown(key)) return true;
         }
-        Debug.Log("[Command]Input Not Valid");
+        //Debug.Log("[Command]Input Not Valid");
         return false;
     }
 }

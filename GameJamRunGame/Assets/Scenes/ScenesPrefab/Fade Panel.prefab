@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188cbe85ac1519449a9abfd9cba9d795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FadeSceneLoader: {fileID: 3234200379470231531}
   sceneName_: SelectScene
 --- !u!114 &3234200379470231531
 MonoBehaviour:
@@ -236,6 +237,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa8b7eb7985ccc4994ce301cd227564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName_: 
   fadePanel: {fileID: 6872003761545608600}
   fadeDuration: 1
