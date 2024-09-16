@@ -28,7 +28,7 @@ public class CrowdControler : MonoBehaviour
     ZombieCrowd zombieCrowd;
 
     [SerializeField]
-    GameObject ActorPrefab;
+    GameObject actorPrefab;
     const int kInitialActorCount = 10;
 
     List<CrowdActor> actors = new();
@@ -46,7 +46,7 @@ public class CrowdControler : MonoBehaviour
         {
             Vector3 actorPosition = crowd.position;
             actorPosition += new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
-            CrowdActor actor = Instantiate(ActorPrefab, actorPosition, Quaternion.Euler(0, 45, 0), crowd).GetComponent<CrowdActor>();
+            CrowdActor actor = Instantiate(actorPrefab, actorPosition, Quaternion.Euler(0, 45, 0), crowd).GetComponent<CrowdActor>();
             actors.Add(actor);
             actor.Initialize(this, moveSpeed);
             actor.LookDirection(kMoveDirections[currentDirection]);
@@ -57,6 +57,7 @@ public class CrowdControler : MonoBehaviour
     {
         foreach (var actor in newActors)
         {
+            actor.transform.SetParent(crowd);
             actor.Initialize(this, moveSpeed);
             actor.LookDirection(kMoveDirections[currentDirection]);
         }

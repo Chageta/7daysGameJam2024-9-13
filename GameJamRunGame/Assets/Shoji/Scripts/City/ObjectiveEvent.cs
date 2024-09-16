@@ -10,7 +10,6 @@ public class ObjectiveEvent : MonoBehaviour
     
     private void OnTriggerEnter(Collider hit)
     {
-        hit.GetComponent<CrowdControler>().Stop();
         OnCrowdEnter.Invoke();
         gameObject.SetActive(false);
     }

@@ -8,8 +8,11 @@ public class AutoBuilding : MonoBehaviour
     Transform buildingRoot;
     [SerializeField]
     GameObject[] commonBuildings;
+
     [SerializeField]
-    GameObject stadiumPrefab;
+    Transform objectiveRoot;
+    [SerializeField]
+    GameObject stadium;
     [SerializeField]
     CrowdControler crowd;
 
@@ -28,9 +31,9 @@ public class AutoBuilding : MonoBehaviour
             {
                 Vector3 position = new Vector3(i * 80 + 40, 0, k * 80 + 40);
                 Quaternion rotation = Quaternion.Euler(0, Random.Range(0, 4) * 90, 0);
-                GameObject prefab = (i == stadiumAddress.x && k == stadiumAddress.y) ? stadiumPrefab :
-                    commonBuildings[Random.Range(0, commonBuildings.Length)];
-                Instantiate(prefab, position, rotation, buildingRoot);
+                GameObject building = (i == stadiumAddress.x && k == stadiumAddress.y) ? stadium :
+                    Instantiate(commonBuildings[Random.Range(0, commonBuildings.Length)], position, rotation, buildingRoot);
+                building.transform.SetPositionAndRotation(position, rotation);
             }
         }
     }

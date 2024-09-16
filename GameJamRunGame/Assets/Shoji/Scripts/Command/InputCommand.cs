@@ -19,7 +19,7 @@ public class InputCommand : MonoBehaviour
     
     public void BeginCommand()
     {
-        commands = new int[3];//new int[DifficultyManager.Instance.CommandLength];
+        commands = new int[DifficultyManager.Instance.CommandLength];
         for (int i = 0; i < commands.Length; i++)
         {
             commands[i] = Random.Range(0, 4);

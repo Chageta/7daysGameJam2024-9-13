@@ -20,6 +20,9 @@ public class PlayerInput : MonoBehaviour
     }
     public void EndInput()
     {
+        crowd.EndControl();
+        crowd.Stop();
+        command.ForceEndCommand();
         StopAllCoroutines();
     }
     IEnumerator ObserveModeChange()
