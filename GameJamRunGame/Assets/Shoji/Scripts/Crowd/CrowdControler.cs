@@ -22,7 +22,11 @@ public class CrowdControler : MonoBehaviour
     Vector3 determination;
 
     [SerializeField]
-    GameObject[] moveArrows, determinationArrows;
+    GameObject[] speedArrows, directionArrows, determinationArrows;
+    [SerializeField]
+    Transform arrowRoot, determinationArrowRoot;
+    int arrowEmissionShaderProperty;
+    Coroutine arrowEmissionCoroutine;
 
     [SerializeField]
     ZombieCrowd zombieCrowd;
@@ -32,9 +36,13 @@ public class CrowdControler : MonoBehaviour
     const int kInitialActorCount = 10;
 
     List<CrowdActor> actors = new();
+    int deadCount;
 
     [SerializeField]
     CrowdUI crowdUI;
+
+    [SerializeField]
+    ResultWindow resultWindow;
 
     public void InitializeCrowd(Vector3 position, int direction)
     {
@@ -52,6 +60,7 @@ public class CrowdControler : MonoBehaviour
             actor.LookDirection(kMoveDirections[currentDirection]);
             UpdateUI();
         }
+        arrowEmissionShaderProperty = Shader.PropertyToID("_EmissionAmount");
     }
     public void AddCrowdActors(CrowdActor[] newActors)
     {
@@ -87,7 +96,8 @@ public class CrowdControler : MonoBehaviour
             int input = IsValidInput();
             if (input == -1) continue;
 
-            if (input < 2)
+            bool wsInput = input < 2;
+            if (wsInput)
             {
                 bool cannotStop = input == 1 && zombieCrowd.HasZombie;
                 if (cannotStop) continue;
@@ -101,6 +111,41 @@ public class CrowdControler : MonoBehaviour
             {
                 nextDirection = input == 2 ? -1 : 1;
             }
+            SetArrow(wsInput);
+        }
+    }
+    void SetArrow(bool wsInput)
+    {
+        HideArrows();
+        if (wsInput) speedArrows[moveSpeed].SetActive(true);
+        else directionArrows[nextDirection + 1].SetActive(true);
+
+        determinationArrows[nextDirection + 1].SetActive(true);
+
+        if (arrowEmissionCoroutine != null)
+        {
+            StopCoroutine(arrowEmissionCoroutine);
+            arrowEmissionCoroutine = null;
+        }
+        arrowEmissionCoroutine = StartCoroutine(ArrowEmission());
+    }
+    void HideArrows()
+    {
+        foreach (var arrow in directionArrows)
+            arrow.SetActive(false);
+        foreach (var arrow in speedArrows)
+            arrow.SetActive(false);
+        foreach (var arrow in determinationArrows)
+            arrow.SetActive(false);
+    }
+    IEnumerator ArrowEmission()
+    {
+        float emission = 1;
+        while (emission > 0)
+        {
+            emission = Mathf.Clamp01(emission - Time.deltaTime);
+            Shader.SetGlobalFloat(arrowEmissionShaderProperty, emission);
+            yield return null;
         }
     }
     int IsValidInput()
@@ -119,6 +164,11 @@ public class CrowdControler : MonoBehaviour
             MoveUntilDead();
             CalcDetermination();
             actors.ForEach(a => a.LookDirection(kMoveDirections[currentDirection]));
+
+            arrowRoot.SetLocalPositionAndRotation(kMoveDirections[currentDirection] * 3, Quaternion.LookRotation(-kMoveDirections[currentDirection]));
+            determinationArrowRoot.SetPositionAndRotation(determination + kMoveDirections[currentDirection] * 3, arrowRoot.rotation);
+            SetArrow(true);
+
             while ((determination - crowd.position).sqrMagnitude > 0.01f)
             {
                 crowd.position = Vector3.MoveTowards(crowd.position, determination, kMoveSpeeds[moveSpeed] * Time.deltaTime);
@@ -135,6 +185,8 @@ public class CrowdControler : MonoBehaviour
         Debug.Log("calc dest");
         crowd.position = determination;
         cameras[currentDirection].Priority = 0;
+
+        if (actors.Count == zombieCrowd.ZombieCount) nextDirection = 0;
         currentDirection = (currentDirection + nextDirection + 4) % 4;
         nextDirection = 0;
         cameras[currentDirection].Priority = 10;
@@ -159,6 +211,12 @@ public class CrowdControler : MonoBehaviour
     public void OnActorDead(CrowdActor actor)
     {
         actors.Remove(actor);
+        deadCount++;
+        UpdateUI();
+        
+        if (actors.Count > 0) return;
+        Stop();
+        resultWindow.Begin(this);
     }
     void UpdateUI()
     {
@@ -168,6 +226,9 @@ public class CrowdControler : MonoBehaviour
     {
         StopAllCoroutines();
         actors.ForEach(a => a.SetMoveSpeed(0));
+        HideArrows();
     }
+    public int ActorCount => actors.Count;
+    public int DeadCount => deadCount;
     public bool HasZombie => zombieCrowd.HasZombie;
 }

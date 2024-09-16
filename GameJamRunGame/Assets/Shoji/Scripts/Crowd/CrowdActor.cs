@@ -23,6 +23,8 @@ public class CrowdActor : MonoBehaviour
 
     [SerializeField]
     Transform skinRoot;
+    [SerializeField]
+    ParticleSystem blood;
     private void Awake()
     {
         skinRoot.GetChild(Random.Range(0, skinRoot.childCount)).gameObject.SetActive(true);
@@ -111,11 +113,21 @@ public class CrowdActor : MonoBehaviour
     private void OnCollisionEnter(Collision hit)
     {
         if (hit.gameObject.layer != 6) return;
+        if (anim.GetBool("isDead")) return;
         StopAllCoroutines();
         CancelInvoke();
+        transform.SetParent(null);
         anim.SetBool("isDead", true);
+        Invoke("HideMesh", 1);
+        Vector3 velocity = hit.gameObject.GetComponent<Vehicle>().Velocity;
+        rb.AddForce(velocity, ForceMode.Impulse);
+        blood.Play();
 
         OnDead?.Invoke(this);
     }
-    bool IsTexting => anim.GetBool("isTexting");
+    void HideMesh()
+    {
+        skinRoot.gameObject.SetActive(false);
+    }
+    public bool IsTexting => anim.GetBool("isTexting");
 }

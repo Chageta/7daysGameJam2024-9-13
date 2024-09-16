@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class ResultWindow : MonoBehaviour
 {
@@ -13,9 +14,14 @@ public class ResultWindow : MonoBehaviour
     [SerializeField]
     FadeSceneLoader sceneLoader;
 
-    public void Begin()
+    public void Begin(CrowdControler crowd)
     {
         anim.SetTrigger("Play");
+        TimeSpan current = ResultManager.Time();
+        clearTime.text = $"{current.Minutes}:{current.Seconds.ToString("00")}";
+        crowdCount.text = crowd.ActorCount.ToString();
+        deadCount.text = crowd.DeadCount.ToString();
+        Debug.Log(current);
     }
     void EnableSceneTransition()
     {

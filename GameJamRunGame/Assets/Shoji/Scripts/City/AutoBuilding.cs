@@ -20,7 +20,7 @@ public class AutoBuilding : MonoBehaviour
     private void Awake()
     {
         InitializeCity();
-        InitializeCrowd();
+        StartGame();
     }
     void InitializeCity()
     {
@@ -36,6 +36,11 @@ public class AutoBuilding : MonoBehaviour
                 building.transform.SetPositionAndRotation(position, rotation);
             }
         }
+    }
+    void StartGame()
+    {
+        InitializeCrowd();
+        ResultManager.StartTimer();
     }
     void InitializeCrowd()
     {

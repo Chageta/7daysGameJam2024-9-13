@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 160.00003
@@ -248,6 +252,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -360,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 239.99991
@@ -422,6 +434,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -490,6 +506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -557,6 +577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00006866455
@@ -608,6 +632,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 35043726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &37227663
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1505458517}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c, type: 3}
+--- !u!4 &37227664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 37227663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &37227665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 37227663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &39432048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -619,6 +733,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -755,6 +873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -821,6 +943,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (171)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -889,6 +1015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -951,6 +1081,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -1019,6 +1153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00003
@@ -1081,6 +1219,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (233)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -1149,6 +1291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160
@@ -1211,6 +1357,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1275,6 +1425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00003
@@ -1337,6 +1491,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (124)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -1405,6 +1563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1471,6 +1633,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1598,6 +1764,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112284869}
   m_CullTransparentMesh: 1
+--- !u!1001 &113276710
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 889871335}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_Name
+      value: UpArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3512faf3b15b37645a3a761522f81ed5, type: 3}
+--- !u!4 &113276711 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+    type: 3}
+  m_PrefabInstance: {fileID: 113276710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &113276712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3512faf3b15b37645a3a761522f81ed5,
+    type: 3}
+  m_PrefabInstance: {fileID: 113276710}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &116318754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1609,6 +1865,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -1752,6 +2012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 239.99988
@@ -1814,6 +2078,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (159)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1878,6 +2146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (139)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.99993
@@ -1940,6 +2212,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -2007,6 +2283,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (193)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2115,6 +2395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (225)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2182,6 +2466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 159.99992
@@ -2244,6 +2532,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (172)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -2312,6 +2604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.99996
@@ -2374,6 +2670,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -2442,6 +2742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.99996
@@ -2504,6 +2808,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (229)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -2571,6 +2879,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (180)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -2774,6 +3086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 160
@@ -2972,6 +3288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3038,6 +3358,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -3157,6 +3481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000038146973
@@ -3219,6 +3547,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (145)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -3287,6 +3619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000076293945
@@ -3349,6 +3685,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (230)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -3417,6 +3757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3484,6 +3828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -159.99997
@@ -3546,6 +3894,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (231)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -3613,6 +3965,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -3829,6 +4185,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4052,6 +4412,7 @@ Transform:
   - {fileID: 808522441}
   - {fileID: 2081410211}
   - {fileID: 1033581486}
+  - {fileID: 889871335}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &303111656
@@ -4093,12 +4454,25 @@ MonoBehaviour:
   - {fileID: 2081410212}
   - {fileID: 47676798}
   - {fileID: 808522442}
-  moveArrows: []
-  determinationArrows: []
+  speedArrows:
+  - {fileID: 1229035321}
+  - {fileID: 113276712}
+  - {fileID: 1561733484}
+  directionArrows:
+  - {fileID: 1654899350}
+  - {fileID: 113276712}
+  - {fileID: 540929642}
+  determinationArrows:
+  - {fileID: 37227665}
+  - {fileID: 1025525081}
+  - {fileID: 952920119}
+  arrowRoot: {fileID: 889871335}
+  determinationArrowRoot: {fileID: 1505458517}
   zombieCrowd: {fileID: 1033581487}
   actorPrefab: {fileID: 2402273000880624115, guid: ce847f2e856c4bd42b0adf470490fb90,
     type: 3}
   crowdUI: {fileID: 961814588}
+  resultWindow: {fileID: 1771132486}
 --- !u!1001 &319329801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4110,6 +4484,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (202)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -4178,6 +4556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4245,6 +4627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (168)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.000114
@@ -4307,6 +4693,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -4499,7 +4889,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -4525,8 +4915,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
-  m_LocalPosition: {x: 0, y: 25, z: 20}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 40, y: 45, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4603,7 +4993,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: 764472bad36e4fe4ebc45168e642fc10, type: 2}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4621,6 +5011,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4684,6 +5078,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -4752,6 +5150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.00004
@@ -4815,6 +5217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00006866455
@@ -4877,6 +5283,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5016,6 +5426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5083,6 +5497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160
@@ -5145,6 +5563,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (149)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -5213,6 +5635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (234)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5279,6 +5705,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (142)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -5347,6 +5777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00008
@@ -5409,6 +5843,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -5697,6 +6135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.000038146973
@@ -5760,6 +6202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240
@@ -5822,6 +6268,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -5890,6 +6340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (244)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5957,6 +6411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00008
@@ -6019,6 +6477,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (188)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -6087,6 +6549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -239.99994
@@ -6149,6 +6615,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -6268,6 +6738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000076293945
@@ -6330,6 +6804,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -6398,6 +6876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (237)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6464,6 +6946,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -6532,6 +7018,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (135)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6599,6 +7089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (246)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240.00006
@@ -6661,6 +7155,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -6729,6 +7227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (247)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6796,6 +7298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6862,6 +7368,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (140)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -6964,6 +7474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00006866455
@@ -7027,6 +7541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (134)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7082,6 +7600,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 537954480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &540929640
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 889871335}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_Name
+      value: RightArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9b35c3ac10c59044a149f1683843310, type: 3}
+--- !u!4 &540929641 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+    type: 3}
+  m_PrefabInstance: {fileID: 540929640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &540929642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e9b35c3ac10c59044a149f1683843310,
+    type: 3}
+  m_PrefabInstance: {fileID: 540929640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &546729241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7093,6 +7701,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7160,6 +7772,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (214)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7272,6 +7888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7339,6 +7959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.00007
@@ -7401,6 +8025,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7469,6 +8097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00012
@@ -7531,6 +8163,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7599,6 +8235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (200)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -239.99997
@@ -7661,6 +8301,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7729,6 +8373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160
@@ -7791,6 +8439,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7859,6 +8511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (190)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7925,6 +8581,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7993,6 +8653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8060,6 +8724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00012
@@ -8122,6 +8790,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (166)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -8190,6 +8862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8257,6 +8933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (192)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240
@@ -8319,6 +8999,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (108)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -8387,6 +9071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8454,6 +9142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (245)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8520,6 +9212,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8658,6 +9354,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -8801,6 +9501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (213)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240
@@ -8863,6 +9567,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (243)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -8931,6 +9639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.00008
@@ -8993,6 +9705,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9101,6 +9817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9168,6 +9888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80
@@ -9230,6 +9954,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (128)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -9298,6 +10026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9364,6 +10096,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (221)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -9432,6 +10168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (217)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9499,6 +10239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000038146973
@@ -9561,6 +10305,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (158)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -9628,6 +10376,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9756,7 +10508,7 @@ PrefabInstance:
     - target: {fileID: 3595487856189645942, guid: a1d3800f025b7c9488d1eb92ed96d54b,
         type: 3}
       propertyPath: OnCrowdEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3595487856189645942, guid: a1d3800f025b7c9488d1eb92ed96d54b,
         type: 3}
@@ -9800,14 +10552,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3595487856189645942, guid: a1d3800f025b7c9488d1eb92ed96d54b,
         type: 3}
+      propertyPath: OnCrowdEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 303111657}
+    - target: {fileID: 3595487856189645942, guid: a1d3800f025b7c9488d1eb92ed96d54b,
+        type: 3}
       propertyPath: OnCrowdEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3595487856189645942, guid: a1d3800f025b7c9488d1eb92ed96d54b,
         type: 3}
       propertyPath: OnCrowdEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: CrowdControler, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3702223919281307611, guid: a1d3800f025b7c9488d1eb92ed96d54b,
+        type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1836703752}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9836,6 +10598,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (150)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -9976,6 +10742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (175)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00006
@@ -10038,6 +10808,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -10105,6 +10879,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -10222,6 +11000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10289,6 +11071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10355,6 +11141,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (144)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -10481,6 +11271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10547,6 +11341,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -10615,6 +11413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10681,6 +11483,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (236)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -10749,6 +11555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (220)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240.00003
@@ -10800,6 +11610,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 887091722}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &889871334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889871335}
+  m_Layer: 7
+  m_Name: Arrows
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &889871335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889871334}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1229035322}
+  - {fileID: 113276711}
+  - {fileID: 1561733483}
+  - {fileID: 1654899349}
+  - {fileID: 540929641}
+  m_Father: {fileID: 303111655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &895780260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10811,6 +11657,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b74c48c2e73e17c418c9394124b75daf, type: 3}
       propertyPath: m_Name
       value: Natures_Grass Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b74c48c2e73e17c418c9394124b75daf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b74c48c2e73e17c418c9394124b75daf, type: 3}
       propertyPath: m_LocalScale.x
@@ -10922,6 +11772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.00004
@@ -10984,6 +11838,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11048,6 +11906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (154)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00012
@@ -11110,6 +11972,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -11178,6 +12044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (152)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -11245,6 +12115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (196)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -11299,6 +12173,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689,
     type: 3}
   m_PrefabInstance: {fileID: 952309777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &952920118
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1505458517}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_Name
+      value: RightArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9b35c3ac10c59044a149f1683843310,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9b35c3ac10c59044a149f1683843310, type: 3}
+--- !u!1 &952920119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e9b35c3ac10c59044a149f1683843310,
+    type: 3}
+  m_PrefabInstance: {fileID: 952920118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &952920120 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e9b35c3ac10c59044a149f1683843310,
+    type: 3}
+  m_PrefabInstance: {fileID: 952920118}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &961814583
 GameObject:
@@ -11434,6 +12398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (189)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -11501,6 +12469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80
@@ -11563,6 +12535,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (201)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -11631,6 +12607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (153)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00012
@@ -11694,6 +12674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (138)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.99993
@@ -11756,6 +12740,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (241)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -11824,6 +12812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (226)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 239.99991
@@ -11887,6 +12879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 159.99988
@@ -11949,6 +12945,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (179)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -12017,6 +13017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (212)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12084,6 +13088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (178)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00012
@@ -12146,6 +13154,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -12214,6 +13226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (151)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12268,6 +13284,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689,
     type: 3}
   m_PrefabInstance: {fileID: 1022103363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1025525079
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1505458517}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_Name
+      value: UpArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3512faf3b15b37645a3a761522f81ed5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3512faf3b15b37645a3a761522f81ed5, type: 3}
+--- !u!4 &1025525080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3512faf3b15b37645a3a761522f81ed5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1025525079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1025525081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3512faf3b15b37645a3a761522f81ed5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1025525079}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1033581485
 GameObject:
@@ -12391,6 +13497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12458,6 +13568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12524,6 +13638,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (147)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12679,6 +13797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (182)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12745,6 +13867,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -12813,6 +13939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12880,6 +14010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000076293945
@@ -12943,6 +14077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (223)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 239.99997
@@ -13005,6 +14143,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (116)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -13073,6 +14215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (164)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13139,6 +14285,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -13207,6 +14357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (206)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13273,6 +14427,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (249)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -13476,6 +14634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (222)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13542,6 +14704,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (211)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -13610,6 +14776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (195)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13676,6 +14846,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -13744,6 +14918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (224)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13810,6 +14988,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (161)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -13878,6 +15060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (248)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13944,6 +15130,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (215)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -14012,6 +15202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -14079,6 +15273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -239.99997
@@ -14141,6 +15339,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -14209,6 +15411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.00004
@@ -14260,6 +15466,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1227854917}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1229035320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 889871335}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_Name
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a, type: 3}
+--- !u!1 &1229035321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1229035320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1229035322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b22dbdc91b0a5e4a9db2ca88b73916a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1229035320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1233758180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14271,6 +15567,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14335,6 +15635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00011444092
@@ -14397,6 +15701,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (242)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -14462,6 +15770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1250680297}
+  - component: {fileID: 1250680301}
   - component: {fileID: 1250680300}
   - component: {fileID: 1250680299}
   - component: {fileID: 1250680298}
@@ -14555,6 +15864,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1250680301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250680296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a91889ba1841f4fa159878e7fcc2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1287999260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14566,6 +15887,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14630,6 +15955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14693,6 +16022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 160.00006
@@ -14755,6 +16088,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (130)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -14823,6 +16160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (194)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -14889,6 +16230,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (208)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -14957,6 +16302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15023,6 +16372,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -15091,6 +16444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (169)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.000114
@@ -15154,6 +16511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (133)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -159.99994
@@ -15216,6 +16577,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (170)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -15284,6 +16649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15350,6 +16719,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (181)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -15418,6 +16791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.000038146973
@@ -15480,6 +16857,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (183)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -15570,6 +16951,7 @@ Transform:
   - {fileID: 1503136835}
   - {fileID: 895780261}
   - {fileID: 1967915004}
+  - {fileID: 1995474325}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1399343981
@@ -15688,6 +17070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15755,6 +17141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240
@@ -15817,6 +17207,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (204)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15956,6 +17350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 159.99997
@@ -16018,6 +17416,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (216)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -16086,6 +17488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16153,6 +17559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 160
@@ -16216,6 +17626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 159.99992
@@ -16278,6 +17692,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (198)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -16346,6 +17764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (167)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16413,6 +17835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16479,6 +17905,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16562,6 +17992,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1399343980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1505458516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505458517}
+  m_Layer: 7
+  m_Name: DeterminationArrows
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505458517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505458516}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1025525080}
+  - {fileID: 37227664}
+  - {fileID: 952920120}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1511025696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16573,6 +18037,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (184)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -16640,6 +18108,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (191)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -16785,6 +18257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (122)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16852,6 +18328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (235)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16918,6 +18398,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (250)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -17044,6 +18528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (197)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17111,6 +18599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17177,6 +18669,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -17320,6 +18816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.00008
@@ -17382,6 +18882,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (143)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -17449,6 +18953,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17647,6 +19155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 159.99997
@@ -17698,6 +19210,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1555603543}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1561733482
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 889871335}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_Name
+      value: UpArrow2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40eb42374f9d0d14b95190ea1baa31db,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40eb42374f9d0d14b95190ea1baa31db, type: 3}
+--- !u!4 &1561733483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 40eb42374f9d0d14b95190ea1baa31db,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561733482}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1561733484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 40eb42374f9d0d14b95190ea1baa31db,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561733482}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1564612044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17709,6 +19311,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -17777,6 +19383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 160.00006
@@ -17839,6 +19449,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (210)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -17907,6 +19521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17974,6 +19592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240.00006
@@ -18036,6 +19658,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -18104,6 +19730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (157)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18170,6 +19800,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -18238,6 +19872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18304,6 +19942,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -18372,6 +20014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.00007
@@ -18434,6 +20080,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -18502,6 +20152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18568,6 +20222,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (165)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -18636,6 +20294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (162)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.999886
@@ -18699,6 +20361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (174)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00006
@@ -18761,6 +20427,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (148)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -18829,6 +20499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.00004
@@ -18892,6 +20566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (203)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18946,6 +20624,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689,
     type: 3}
   m_PrefabInstance: {fileID: 1649396282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1654899348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 889871335}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 651e0ddd8c221944fad00277b18aaca7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c, type: 3}
+--- !u!4 &1654899349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1654899348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1654899350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98f2ecb5e8bee0444a44cb8cabc3ec1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1654899348}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1655431720
 GameObject:
@@ -19093,6 +20861,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (227)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -19296,6 +21068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80
@@ -19359,6 +21135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00006
@@ -19421,6 +21201,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -19564,6 +21348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240.00003
@@ -19626,6 +21414,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -19694,6 +21486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (218)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -19761,6 +21557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.999886
@@ -19823,6 +21623,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -19891,6 +21695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.99996
@@ -19954,6 +21762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80
@@ -20016,6 +21828,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -20084,6 +21900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (186)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00003
@@ -20146,6 +21966,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (232)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -20214,6 +22038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (176)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -20281,6 +22109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160
@@ -20344,6 +22176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (177)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00012
@@ -20406,6 +22242,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (219)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -20474,6 +22314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80
@@ -20536,6 +22380,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (160)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20600,6 +22448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00003
@@ -20662,6 +22514,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (131)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -20770,7 +22626,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771132482}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -20824,6 +22680,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -20892,6 +22752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (228)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -20958,6 +22822,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -21026,6 +22894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00003
@@ -21088,6 +22960,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (156)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -21156,6 +23032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (173)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21222,6 +23102,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -21290,6 +23174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21356,6 +23244,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (141)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -21526,6 +23418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.99996
@@ -21664,6 +23560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21730,6 +23630,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (251)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -21798,6 +23702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21864,6 +23772,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22003,6 +23915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (238)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22069,6 +23985,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -22137,6 +24057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (163)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22204,6 +24128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (199)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -239.99997
@@ -22267,6 +24195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80
@@ -22329,6 +24261,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -22397,6 +24333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22464,6 +24404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22530,6 +24474,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22628,6 +24576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22695,6 +24647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (187)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240.00003
@@ -22758,6 +24714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22813,6 +24773,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1989213771}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1995474324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995474325}
+  - component: {fileID: 1995474326}
+  m_Layer: 0
+  m_Name: VehicleTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995474325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995474324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1399343980}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995474326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995474324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffec11e93293cb84e9f1642625381855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleTriggerPrefab: {fileID: 1036581276884584617, guid: 8f1c377b18220b144a4d5cce83560ef9,
+    type: 3}
 --- !u!1001 &2003893990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22824,6 +24830,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (136)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -22892,6 +24902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22958,6 +24972,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (209)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -23026,6 +25044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (205)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -239.99994
@@ -23088,6 +25110,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (155)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -23156,6 +25182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: -160.00008
@@ -23218,6 +25248,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (207)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -23339,7 +25373,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2050041639
 Transform:
@@ -23669,6 +25703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (239)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -23804,6 +25842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -23870,6 +25912,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -24085,6 +26131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (240)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 239.99988
@@ -24147,6 +26197,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24346,6 +26400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Intersection_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -240
@@ -24408,6 +26466,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24472,6 +26534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.000038146973
@@ -24534,6 +26600,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_Name
       value: Road Lane_01 (146)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
@@ -24602,6 +26672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (185)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -24669,6 +26743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Lane_01 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -24735,6 +26813,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_Name
       value: Road Intersection_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24875,6 +26957,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1836703751}
   - {fileID: 303111655}
+  - {fileID: 1505458517}
   - {fileID: 1399343980}
   - {fileID: 536664664}
   - {fileID: 2051901448}

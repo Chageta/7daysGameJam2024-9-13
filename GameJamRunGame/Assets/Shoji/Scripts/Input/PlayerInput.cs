@@ -10,10 +10,6 @@ public class PlayerInput : MonoBehaviour
     InputCommand command;
     bool commandMode = false;
 
-    private void Awake()
-    {
-        BeginInput();
-    }
     public void BeginInput()
     {
         StartCoroutine("ObserveModeChange");
