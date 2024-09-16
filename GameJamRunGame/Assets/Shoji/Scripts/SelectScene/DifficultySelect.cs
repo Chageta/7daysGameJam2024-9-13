@@ -18,13 +18,20 @@ public class DifficultySelect : MonoBehaviour
     [SerializeField]
     FadeSceneLoader sceneLoader;
 
+    [SerializeField]
+    GameObject[] infoTexts;
+
     private void Awake()
     {
         foreach (var button in buttons)
         {
             button.color = inactiveColor;
         }
-        buttons[buttonIndex].color = activeColor;
+        foreach (var text in infoTexts)
+        {
+            text.SetActive(false);
+        }
+        SetButtonActive(true);
         StartCoroutine(SelectButtons());
     }
     IEnumerator SelectButtons()
@@ -43,11 +50,17 @@ public class DifficultySelect : MonoBehaviour
             if (input == -1) continue;
 
             buttons[buttonIndex].color = inactiveColor;
+            SetButtonActive(false);
             buttonIndex = Mathf.Clamp(buttonIndex + (input == 0 ? -1 : 1), 0, buttons.Length - 1);
-            buttons[buttonIndex].color = activeColor;
+            SetButtonActive(true);
         }
         DifficultyManager.Instance.Difficulty = buttonIndex;
         sceneLoader.TransitionScene();
+    }
+    void SetButtonActive(bool active)
+    {
+        buttons[buttonIndex].color = active ? activeColor : inactiveColor;
+        infoTexts[buttonIndex].SetActive(active);
     }
     int IsValidInput()
     {

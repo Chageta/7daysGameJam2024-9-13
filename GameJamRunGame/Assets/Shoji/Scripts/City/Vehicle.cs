@@ -7,11 +7,12 @@ public class Vehicle : MonoBehaviour
     [SerializeField]
     float speed;
     Vector3 localPos;
-    // Start is called before the first frame update
+
     void Start()
     {
         localPos = transform.localPosition;
         localPos.z *= -1;
+        transform.GetChild(Random.Range(0, transform.childCount)).gameObject.SetActive(true);
     }
 
     // Update is called once per frame

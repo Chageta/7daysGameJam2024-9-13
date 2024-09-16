@@ -21,6 +21,7 @@ public class ResultWindow : MonoBehaviour
         clearTime.text = $"{current.Minutes}:{current.Seconds.ToString("00")}";
         crowdCount.text = crowd.ActorCount.ToString();
         deadCount.text = crowd.DeadCount.ToString();
+        bloodAmount.text = $"{Mathf.Min(crowd.DeadCount, 100)}%";
         Debug.Log(current);
     }
     void EnableSceneTransition()

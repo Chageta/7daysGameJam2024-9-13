@@ -19,12 +19,15 @@ public class CrowdActor : MonoBehaviour
     Coroutine lookDirection;
     Coroutine moveUntilDead;
 
-    const float kZombieTimeMin = 5,kZombieTimeRange = 5;
+    const float kZombieTimeMin = 5, kZombieTimeRange = 5;
 
     [SerializeField]
     Transform skinRoot;
     [SerializeField]
     ParticleSystem blood;
+
+    [SerializeField]
+    GameObject phoneIcon;
     private void Awake()
     {
         skinRoot.GetChild(Random.Range(0, skinRoot.childCount)).gameObject.SetActive(true);
@@ -37,7 +40,9 @@ public class CrowdActor : MonoBehaviour
     {
         this.crowd = crowd;
         SetMoveSpeed(moveSpeed);
-        Revive();
+
+        float waitTime = DifficultyManager.Instance.CommandWait + 5;
+        Invoke("TurnIntoZombie", waitTime);
 
         OnDead += crowd.OnActorDead;
     }
@@ -46,14 +51,16 @@ public class CrowdActor : MonoBehaviour
         crowd.TurnIntoZombie(this);
         anim.SetBool("isTexting", true);
         anim.SetLayerWeight(1, 1);
+        phoneIcon.SetActive(true);
     }
     public void Revive()
     {
-        float waitTime = kZombieTimeMin + Random.Range(0, kZombieTimeRange);
         CancelInvoke();
+        float waitTime = DifficultyManager.Instance.CommandWait;
         Invoke("TurnIntoZombie", waitTime);
         anim.SetBool("isTexting", false);
         anim.SetLayerWeight(1, 0);
+        phoneIcon.SetActive(false);
 
         if (moveUntilDead == null) return;
         StopCoroutine(moveUntilDead);
@@ -83,11 +90,12 @@ public class CrowdActor : MonoBehaviour
     }
     private void Update()
     {
-        if (anim.GetBool("isDead")) return;
+        if (IsDead) return;
         rb.angularVelocity = Vector3.zero;
         Vector3 rot = transform.eulerAngles;
         rot.x = rot.z = 0;
         transform.eulerAngles = rot;
+        if (crowd != null) if (Vector3.SqrMagnitude(crowd.transform.position - transform.position) > 2500) Die();
         if (IsTexting) return;
 
         Vector3 moveVector = (transform.parent.TransformPoint(positionInCrowd) - transform.position) * 2;
@@ -113,14 +121,19 @@ public class CrowdActor : MonoBehaviour
     private void OnCollisionEnter(Collision hit)
     {
         if (hit.gameObject.layer != 6) return;
-        if (anim.GetBool("isDead")) return;
+        if (IsDead) return;
+        Vector3 velocity = hit.gameObject.GetComponent<Vehicle>().Velocity;
+        rb.AddForce(velocity, ForceMode.Impulse);
+        Die();
+    }
+    void Die()
+    {
+        if (IsDead) return;
         StopAllCoroutines();
         CancelInvoke();
         transform.SetParent(null);
         anim.SetBool("isDead", true);
         Invoke("HideMesh", 1);
-        Vector3 velocity = hit.gameObject.GetComponent<Vehicle>().Velocity;
-        rb.AddForce(velocity, ForceMode.Impulse);
         blood.Play();
 
         OnDead?.Invoke(this);
@@ -129,5 +142,6 @@ public class CrowdActor : MonoBehaviour
     {
         skinRoot.gameObject.SetActive(false);
     }
+    public bool IsDead => anim.GetBool("isDead");
     public bool IsTexting => anim.GetBool("isTexting");
 }

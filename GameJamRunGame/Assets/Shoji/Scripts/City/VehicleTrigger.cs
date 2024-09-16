@@ -9,11 +9,14 @@ public class VehicleTrigger : MonoBehaviour
     [SerializeField]
     Vehicle vehiclePrefab;
     bool coolTime = false;
+    [SerializeField]
+    bool outer;
     private void OnTriggerEnter(Collider hit)
     {
         if (coolTime) return;
         if (hit.gameObject.layer != 9) return;
-        if (!hit.GetComponent<CrowdActor>().IsTexting) return;
+        CrowdActor actor = hit.GetComponent<CrowdActor>();
+        if ((!actor.IsTexting && !outer) || actor.IsDead) return;
 
         coolTime = true;
         StartCoroutine(CoolTime());

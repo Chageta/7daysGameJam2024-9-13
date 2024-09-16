@@ -228,6 +228,14 @@ public class CrowdControler : MonoBehaviour
         actors.ForEach(a => a.SetMoveSpeed(0));
         HideArrows();
     }
+    private void Update()
+    {
+        //マップ外強制死亡
+        if (Mathf.Max(Mathf.Abs(crowd.position.x), Mathf.Abs(crowd.position.z)) < 320) return;
+
+        Stop();
+        resultWindow.Begin(this);
+    }
     public int ActorCount => actors.Count;
     public int DeadCount => deadCount;
     public bool HasZombie => zombieCrowd.HasZombie;

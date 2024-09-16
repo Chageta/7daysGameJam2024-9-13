@@ -12,7 +12,6 @@ public class ResultManager : MonoBehaviour
     }
     public static TimeSpan Time()
     {
-        Debug.Log($"time:{startTime}   {DateTime.Now}   elapse:{DateTime.Now - startTime}");
         return DateTime.Now - startTime;
     }
 }
