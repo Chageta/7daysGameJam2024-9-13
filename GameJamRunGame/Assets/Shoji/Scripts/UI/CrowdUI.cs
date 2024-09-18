@@ -11,12 +11,22 @@ public class CrowdUI : MonoBehaviour
     [SerializeField]
     Animator[] iconAnims = new Animator[2];
 
+    [SerializeField]
+    TMP_Text addCrowdText;
+    [SerializeField]
+    Animator addCrowdAnim;
+
     int[] counts = new int[2];
     enum CountType
     {
         Crowd,
         Zombie
     }
+
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip addSE;
 
     public void SetCount(int crowd, int zombie)
     {
@@ -37,5 +47,11 @@ public class CrowdUI : MonoBehaviour
             yield return null;
         }
         iconAnims[type].ResetTrigger("Jump");
+    }
+    public void AddCrowd(int amount)
+    {
+        addCrowdText.text = $"+{amount}";
+        addCrowdAnim.Play("AddCrowd", 0, 0);
+        source.PlayOneShot(addSE);
     }
 }

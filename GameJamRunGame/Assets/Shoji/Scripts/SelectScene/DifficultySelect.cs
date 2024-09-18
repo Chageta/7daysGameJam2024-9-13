@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DifficultySelect : MonoBehaviour
 {
@@ -21,6 +22,17 @@ public class DifficultySelect : MonoBehaviour
     [SerializeField]
     GameObject[] infoTexts;
 
+    [SerializeField]
+    TMP_Text[] highScoresTexts;
+    static int[] highScores = new int[3] { int.MinValue, int.MinValue, int.MinValue };
+
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip[] selectSE;
+    [SerializeField]
+    AudioClip confirmSE;
+
     private void Awake()
     {
         foreach (var button in buttons)
@@ -33,6 +45,11 @@ public class DifficultySelect : MonoBehaviour
         }
         SetButtonActive(true);
         StartCoroutine(SelectButtons());
+        for (int i = 0; i < 3; i++)
+        {
+            string text = highScores[i] == int.MinValue ? "" : $"ハイスコア:{highScores[i]}";
+            highScoresTexts[i].text = text;
+        }
     }
     IEnumerator SelectButtons()
     {
@@ -46,16 +63,24 @@ public class DifficultySelect : MonoBehaviour
                 selecting = false;
                 continue;
             }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                sceneLoader.TransitionScene("TitleScene");
+                yield break;
+            }
             int input = IsValidInput();
             if (input == -1) continue;
 
             buttons[buttonIndex].color = inactiveColor;
             SetButtonActive(false);
+            int prevButton = buttonIndex;
             buttonIndex = Mathf.Clamp(buttonIndex + (input == 0 ? -1 : 1), 0, buttons.Length - 1);
             SetButtonActive(true);
+            if (prevButton != buttonIndex) source.PlayOneShot(selectSE[Random.Range(0, selectSE.Length)]);
         }
         DifficultyManager.Instance.Difficulty = buttonIndex;
         sceneLoader.TransitionScene();
+        source.PlayOneShot(confirmSE);
     }
     void SetButtonActive(bool active)
     {
@@ -69,5 +94,9 @@ public class DifficultySelect : MonoBehaviour
             if (Input.GetKeyDown(kSelectKeys[i])) return i;
         }
         return -1;
+    }
+    public static void SetHighScore(int score)
+    {
+        highScores[DifficultyManager.Instance.Difficulty] = Mathf.Max(highScores[DifficultyManager.Instance.Difficulty], score);
     }
 }

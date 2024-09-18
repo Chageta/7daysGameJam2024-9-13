@@ -19,8 +19,6 @@ public class CrowdActor : MonoBehaviour
     Coroutine lookDirection;
     Coroutine moveUntilDead;
 
-    const float kZombieTimeMin = 5, kZombieTimeRange = 5;
-
     [SerializeField]
     Transform skinRoot;
     [SerializeField]
@@ -28,6 +26,11 @@ public class CrowdActor : MonoBehaviour
 
     [SerializeField]
     GameObject phoneIcon;
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip[] phoneClips;
+
     private void Awake()
     {
         skinRoot.GetChild(Random.Range(0, skinRoot.childCount)).gameObject.SetActive(true);
@@ -52,6 +55,7 @@ public class CrowdActor : MonoBehaviour
         anim.SetBool("isTexting", true);
         anim.SetLayerWeight(1, 1);
         phoneIcon.SetActive(true);
+        source.PlayOneShot(phoneClips[Random.Range(0, phoneClips.Length)]);
     }
     public void Revive()
     {
@@ -122,7 +126,9 @@ public class CrowdActor : MonoBehaviour
     {
         if (hit.gameObject.layer != 6) return;
         if (IsDead) return;
-        Vector3 velocity = hit.gameObject.GetComponent<Vehicle>().Velocity;
+        Vehicle vehicle = hit.gameObject.GetComponent<Vehicle>();
+        Vector3 velocity = vehicle.Velocity;
+        vehicle.Collide();
         rb.AddForce(velocity, ForceMode.Impulse);
         Die();
     }
@@ -133,14 +139,21 @@ public class CrowdActor : MonoBehaviour
         CancelInvoke();
         transform.SetParent(null);
         anim.SetBool("isDead", true);
+        phoneIcon.SetActive(false);
         Invoke("HideMesh", 1);
         blood.Play();
+        CrowdScreamer.Instance.Scream();
 
         OnDead?.Invoke(this);
     }
     void HideMesh()
     {
         skinRoot.gameObject.SetActive(false);
+        Invoke("Destroy",20);
+    }
+    void Destroy()
+    {
+        Destroy(gameObject);
     }
     public bool IsDead => anim.GetBool("isDead");
     public bool IsTexting => anim.GetBool("isTexting");

@@ -24,6 +24,11 @@ public class FadeSceneLoader : MonoBehaviour
     {
         StartCoroutine(FadeOutAndLoadScene());
     }
+    public void TransitionScene(string sceneName)
+    {
+        this.sceneName = sceneName;
+        TransitionScene();
+    }
 
     private IEnumerator FadeOutAndLoadScene()
     {

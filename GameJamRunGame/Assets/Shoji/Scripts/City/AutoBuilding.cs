@@ -14,9 +14,12 @@ public class AutoBuilding : MonoBehaviour
     [SerializeField]
     GameObject stadium;
     [SerializeField]
+    GameObject subObjective;
+    [SerializeField]
     CrowdControler crowd;
 
     Vector2Int stadiumAddress;
+    Vector2Int subObjectiveAddress;
     private void Awake()
     {
         InitializeCity();
@@ -25,13 +28,20 @@ public class AutoBuilding : MonoBehaviour
     void InitializeCity()
     {
         stadiumAddress = new Vector2Int(Random.Range(-3, 3), Random.Range(-3, 3));
+        subObjectiveAddress = stadiumAddress + new Vector2Int(3 + Random.Range(1, 7), 3 + Random.Range(1, 7));
+        subObjectiveAddress = new Vector2Int(subObjectiveAddress.x % 7 - 3, subObjectiveAddress.y % 7 - 3);
+        bool hasSubObjective = DifficultyManager.Instance.Difficulty != 0;
+        subObjective.SetActive(hasSubObjective);
         for (int i = -3; i < 3; i++)
         {
             for (int k = -3; k < 3; k++)
             {
                 Vector3 position = new Vector3(i * 80 + 40, 0, k * 80 + 40);
                 Quaternion rotation = Quaternion.Euler(0, Random.Range(0, 4) * 90, 0);
-                GameObject building = (i == stadiumAddress.x && k == stadiumAddress.y) ? stadium :
+                bool isStadium = i == stadiumAddress.x && k == stadiumAddress.y;
+                bool isSubObjective = i == subObjectiveAddress.x && k == subObjectiveAddress.y && hasSubObjective;
+                GameObject building = isStadium ? stadium :
+                    isSubObjective ? subObjective :
                     Instantiate(commonBuildings[Random.Range(0, commonBuildings.Length)], position, rotation, buildingRoot);
                 building.transform.SetPositionAndRotation(position, rotation);
             }
@@ -40,7 +50,6 @@ public class AutoBuilding : MonoBehaviour
     void StartGame()
     {
         InitializeCrowd();
-        ResultManager.StartTimer();
     }
     void InitializeCrowd()
     {
@@ -49,12 +58,12 @@ public class AutoBuilding : MonoBehaviour
         Vector2 adjust = new Vector2(Random.Range(0, 1) == 0 ? -1 : 1, Random.Range(0, 1) == 0 ? -1 : 1);
         position += new Vector3(adjust.x * 32, 0, adjust.y * 32);
         crowd.InitializeCrowd(position, direction);
-        crowd.BeginMove();
     }
     Vector3 InitCrowdPosition()
     {
         Vector2Int address = new Vector2Int(Random.Range(-2, 2), Random.Range(-2, 2));
-        if (address == stadiumAddress) return InitCrowdPosition();
+        bool hasSubObjective = address == subObjectiveAddress && DifficultyManager.Instance.Difficulty != 0;
+        if (address == stadiumAddress || hasSubObjective) return InitCrowdPosition();
         return new Vector3(address.x * 80 + 40, 0, address.y * 80 + 40);
     }
 }

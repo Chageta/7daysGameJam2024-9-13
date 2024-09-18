@@ -16,7 +16,15 @@ public class InputCommand : MonoBehaviour
     bool commandFailureWait = false;
     readonly KeyCode[] kCommandKeys = new KeyCode[4]
     {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
-    
+
+    [SerializeField]
+    AudioSource commandSource;
+    [SerializeField]
+    AudioClip[] commandSE;
+
+    [SerializeField]
+    AudioClip successSE, failureSE;
+
     public void BeginCommand()
     {
         commands = new int[DifficultyManager.Instance.CommandLength];
@@ -30,10 +38,12 @@ public class InputCommand : MonoBehaviour
 
         StopAllCoroutines();
         StartCoroutine("CommandInput");
+        commandSource.PlayOneShot(successSE);
     }
     public void ForceEndCommand()
     {
         StopAllCoroutines();
+        ui.CommandEnd();
         ui.SetActive(false);
     }
     IEnumerator CommandInput()
@@ -47,16 +57,18 @@ public class InputCommand : MonoBehaviour
             if (Input.GetKeyDown(kCommandKeys[commands[currentCommandIndex]]))
             {
                 ui.CommandHit(++currentCommandIndex);
+                PlayCommandSE();
             }
             else
             {
-                OnCommandFailure.Invoke();
-                commandFailureWait = true;
+                FailureCommand();
                 yield break;
             }
         }
+        ui.CommandEnd();
         ui.SetActive(false);
         OnCommandSuccess.Invoke();
+        commandSource.PlayOneShot(successSE);
     }
     public void EndCommandFailureWait()
     {
@@ -70,5 +82,20 @@ public class InputCommand : MonoBehaviour
         }
         //Debug.Log("[Command]Input Not Valid");
         return false;
+    }
+    void PlayCommandSE()
+    {
+        commandSource.PlayOneShot(commandSE[Random.Range(0, commandSE.Length)]);
+    }
+    public void ForceFailure()
+    {
+        FailureCommand();
+        StopAllCoroutines();
+    }
+    void FailureCommand()
+    {
+        OnCommandFailure.Invoke();
+        commandFailureWait = true;
+        commandSource.PlayOneShot(failureSE);
     }
 }

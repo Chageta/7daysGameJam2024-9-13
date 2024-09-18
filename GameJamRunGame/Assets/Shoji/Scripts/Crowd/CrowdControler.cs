@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 using Cinemachine;
 
 public class CrowdControler : MonoBehaviour
 {
+    [SerializeField]
+    UnityEvent OnAllActorDead;
+
     [SerializeField]
     Transform crowd;
     [SerializeField]
@@ -44,11 +47,21 @@ public class CrowdControler : MonoBehaviour
     [SerializeField]
     ResultWindow resultWindow;
 
+    float cameraShakeAmount;
+    Coroutine cameraShake;
+
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip[] speedSE, directionSE;
+
     public void InitializeCrowd(Vector3 position, int direction)
     {
         crowd.position = determination = position;
         currentDirection = direction;
-        CalcDetermination();
+
+        //CalcDeterminationの初期化部分だけ
+        cameras[currentDirection].Priority = 10;
 
         for (int i = 0; i < kInitialActorCount; i++)
         {
@@ -56,7 +69,7 @@ public class CrowdControler : MonoBehaviour
             actorPosition += new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
             CrowdActor actor = Instantiate(actorPrefab, actorPosition, Quaternion.Euler(0, 45, 0), crowd).GetComponent<CrowdActor>();
             actors.Add(actor);
-            actor.Initialize(this, moveSpeed);
+            actor.Initialize(this, 0);
             actor.LookDirection(kMoveDirections[currentDirection]);
             UpdateUI();
         }
@@ -70,6 +83,7 @@ public class CrowdControler : MonoBehaviour
             actor.Initialize(this, moveSpeed);
             actor.LookDirection(kMoveDirections[currentDirection]);
         }
+        crowdUI.AddCrowd(newActors.Length);
         actors.AddRange(newActors);
         UpdateUI();
     }
@@ -77,6 +91,7 @@ public class CrowdControler : MonoBehaviour
     {
         StartCoroutine("Move");
         BeginControl();
+        actors.ForEach(a => a.SetMoveSpeed(moveSpeed));
     }
 
     public void BeginControl()
@@ -117,8 +132,16 @@ public class CrowdControler : MonoBehaviour
     void SetArrow(bool wsInput)
     {
         HideArrows();
-        if (wsInput) speedArrows[moveSpeed].SetActive(true);
-        else directionArrows[nextDirection + 1].SetActive(true);
+        if (wsInput)
+        {
+            speedArrows[moveSpeed].SetActive(true);
+            source.PlayOneShot(speedSE[moveSpeed]);
+        }
+        else
+        {
+            directionArrows[nextDirection + 1].SetActive(true);
+            source.PlayOneShot(directionSE[nextDirection + 1]);
+        }
 
         determinationArrows[nextDirection + 1].SetActive(true);
 
@@ -213,10 +236,35 @@ public class CrowdControler : MonoBehaviour
         actors.Remove(actor);
         deadCount++;
         UpdateUI();
-        
+        if (cameraShake != null)
+        {
+            StopCoroutine(cameraShake);
+            cameraShake = null;
+        }
+        cameraShake = StartCoroutine(CameraShake());
+        BGMManager.AddHard();
+
+        ForceEnd();
         if (actors.Count > 0) return;
         Stop();
+        OnAllActorDead.Invoke();
         resultWindow.Begin(this);
+    }
+    IEnumerator CameraShake()
+    {
+        cameraShakeAmount += 1;
+        float startCameraShakeAmount = cameraShakeAmount;
+        float timer = 0;
+        while (cameraShakeAmount > 0)
+        {
+            cameraShakeAmount = Mathf.Clamp(Mathf.Lerp(startCameraShakeAmount, 0, timer), 0, 3);
+            timer += Time.deltaTime;
+            foreach (var camera in cameras)
+            {
+                camera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = cameraShakeAmount;
+            }
+            yield return null;
+        }
     }
     void UpdateUI()
     {
@@ -224,7 +272,8 @@ public class CrowdControler : MonoBehaviour
     }
     public void Stop()
     {
-        StopAllCoroutines();
+        EndControl();
+        StopCoroutine("Move");
         actors.ForEach(a => a.SetMoveSpeed(0));
         HideArrows();
     }
@@ -233,6 +282,13 @@ public class CrowdControler : MonoBehaviour
         //マップ外強制死亡
         if (Mathf.Max(Mathf.Abs(crowd.position.x), Mathf.Abs(crowd.position.z)) < 320) return;
 
+        Stop();
+        resultWindow.Begin(this);
+    }
+    void ForceEnd()
+    {
+        bool uncontrol = actors.TrueForAll(a => a.IsTexting && Vector3.SqrMagnitude(crowd.position - a.transform.position) > 100);
+        if (!uncontrol) return;
         Stop();
         resultWindow.Begin(this);
     }

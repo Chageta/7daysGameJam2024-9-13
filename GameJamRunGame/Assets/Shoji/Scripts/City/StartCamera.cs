@@ -11,8 +11,19 @@ public class StartCamera : MonoBehaviour
     CinemachineVirtualCamera vCamera;
     [SerializeField]
     PlayerInput playerInput;
+
+    static bool firstTime = true;
+    [SerializeField]
+    GameObject[] tutorialWindows;
+
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip confirmSE;
+
     private void Awake()
     {
+        if (firstTime) StartCoroutine(FirstTimeTutorial());
         StartCoroutine(StartCameraWait());
     }
     IEnumerator StartCameraWait()
@@ -27,5 +38,24 @@ public class StartCamera : MonoBehaviour
         yield return new WaitForSeconds(2);
         playerInput.BeginInput();
         ResultManager.StartTimer();
+    }
+    IEnumerator FirstTimeTutorial()
+    {
+        firstTime = false;
+        yield return new WaitForSeconds(1.2f);
+        int index = 0;
+        Time.timeScale = 0;
+        while (index < tutorialWindows.Length)
+        {
+            tutorialWindows[index].SetActive(true);
+
+            yield return new WaitForSecondsRealtime(0.25f);
+            yield return new WaitUntil(() => Input.anyKeyDown);
+            if (!Input.GetKeyDown(KeyCode.Space)) continue;
+            tutorialWindows[index].SetActive(false);
+            source.PlayOneShot(confirmSE);
+            index++;
+        }
+        Time.timeScale = 1;
     }
 }

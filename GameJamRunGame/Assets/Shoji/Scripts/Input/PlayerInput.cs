@@ -12,7 +12,8 @@ public class PlayerInput : MonoBehaviour
 
     public void BeginInput()
     {
-        StartCoroutine("ObserveModeChange");
+        crowd.BeginMove();
+        StartCoroutine(ObserveModeChange());
     }
     public void EndInput()
     {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CommandUI : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class CommandUI : MonoBehaviour
     CanvasGroup commandGroup;
     [SerializeField]
     TMP_Text commandText;
+    [SerializeField]
+    Image commandGauge;
 
     string commandString;
     readonly char[] commandKeys = new char[4]
@@ -24,6 +27,11 @@ public class CommandUI : MonoBehaviour
             commandString += commandKeys[command];
         }
         commandText.text = commandString;
+        StartCoroutine("MoveCommandGauge");
+    }
+    public void CommandEnd()
+    {
+        StopCoroutine("MoveCommandGauge");
     }
     public void SetActive(bool active)
     {
@@ -53,5 +61,19 @@ public class CommandUI : MonoBehaviour
         inputCommand.EndCommandFailureWait();
         if (commandGroup.alpha <= 0) yield break;
         inputCommand.BeginCommand();
+    }
+    IEnumerator MoveCommandGauge()
+    {
+        float timerStart;
+        float timer = timerStart = DifficultyManager.Instance.CommandTimer;
+        commandGauge.fillAmount = 0;
+        if (timer == -1) yield break;
+        while (timer > 0)
+        {
+            commandGauge.fillAmount = timer / timerStart;
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+        inputCommand.ForceFailure();
     }
 }

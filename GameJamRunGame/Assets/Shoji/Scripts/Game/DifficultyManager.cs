@@ -11,12 +11,15 @@ public class DifficultyManager : MonoBehaviour
     public int Difficulty { get => difficulty; set => difficulty = value; }
 
     static readonly Vector2Int[] kDifficulty = new Vector2Int[3]
-    {new(4,7),new(5,8),new(6,9)};
+    {new(4,7),new(6,9),new(7,11)};
     static readonly Vector2[] kZombieTime = new Vector2[3]
     {new(6,7),new(5,7),new(3,8)};
+    static readonly float[] kCommandTimer = new float[3]
+    {-1,7,5 };
 
     public int CommandLength => Random.Range(kDifficulty[difficulty].x, kDifficulty[difficulty].y);
     public float CommandWait => kZombieTime[difficulty].x + Random.Range(0, kZombieTime[difficulty].y);
+    public float CommandTimer => kCommandTimer[difficulty];
 
     private void Awake()
     {

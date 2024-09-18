@@ -11,6 +11,12 @@ public class VehicleTrigger : MonoBehaviour
     bool coolTime = false;
     [SerializeField]
     bool outer;
+
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip[] carDriveBy;
+
     private void OnTriggerEnter(Collider hit)
     {
         if (coolTime) return;
@@ -36,6 +42,7 @@ public class VehicleTrigger : MonoBehaviour
             Vector3 spawnPos = transform.TransformPoint(-dir * 3.4f, 0, spawnDistance * dir);
             Transform vehicle = Instantiate(vehiclePrefab, spawnPos, Quaternion.identity, transform).transform;
             vehicle.localEulerAngles = new Vector3(0, vehicleCount % 2 == 0 ? 0 : 180);
+            if (vehicleCount % 2 == 0) source.PlayOneShot(carDriveBy[Random.Range(0, carDriveBy.Length)]);
             vehicleCount--;
             float wait = Random.Range(0.1f, 0.5f);
             yield return new WaitForSeconds(wait);

@@ -6,7 +6,7 @@ public class AddCrowdActor : MonoBehaviour
 {
     [SerializeField]
     GameObject actorPrefab;
-    const int kActorCount = 10;
+    const int kActorCount = 5;
 
     CrowdActor[] actors = new CrowdActor[kActorCount];
 

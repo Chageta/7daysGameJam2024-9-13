@@ -9,9 +9,16 @@ public class ObjectiveIndicator : MonoBehaviour
     [SerializeField]
     private Image arrow;
     [SerializeField]
+    CanvasGroup group;
+    [SerializeField]
     private Transform objective;
 
     private Camera mainCamera;
+
+    [SerializeField]
+    float distance = -1;
+    [SerializeField]
+    CrowdControler crowd;
 
     void Awake()
     {
@@ -21,6 +28,7 @@ public class ObjectiveIndicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (distance != -1) UpdateAlpha();
         Vector3 pos = mainCamera.WorldToViewportPoint(objective.position);
 
         bool withOutCamera =
@@ -46,5 +54,15 @@ public class ObjectiveIndicator : MonoBehaviour
         marker.transform.position = mainCamera.ViewportToScreenPoint(targetPosition);
         arrow.transform.position = mainCamera.ViewportToScreenPoint(targetPosition);
         arrow.rectTransform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, arrowAngle));
+    }
+    public void SetEnable(bool enable)
+    {
+        group.alpha = enable ? 1 : 0.25f;
+        marker.color = enable ? Color.white : Color.black;
+    }
+    void UpdateAlpha()
+    {
+        float alpha = (distance - Vector3.Distance(objective.position, crowd.transform.position)) / 5;
+        group.alpha = alpha;
     }
 }
