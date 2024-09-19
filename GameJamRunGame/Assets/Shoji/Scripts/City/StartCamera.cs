@@ -21,10 +21,15 @@ public class StartCamera : MonoBehaviour
     [SerializeField]
     AudioClip confirmSE;
 
+    [SerializeField]
+    CanvasGroup[] startHideCanvas;
+
     private void Awake()
     {
         if (firstTime) StartCoroutine(FirstTimeTutorial());
         StartCoroutine(StartCameraWait());
+        foreach (var canvas in startHideCanvas)
+            canvas.alpha = 0;
     }
     IEnumerator StartCameraWait()
     {
@@ -35,7 +40,15 @@ public class StartCamera : MonoBehaviour
             yield return null;
         }
         vCamera.Priority = 0;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
+        float timer = 0;
+        while (timer < 1)
+        {
+            timer += Time.deltaTime;
+            foreach (var canvas in startHideCanvas)
+                canvas.alpha = timer;
+            yield return null;
+        }
         playerInput.BeginInput();
         ResultManager.StartTimer();
     }

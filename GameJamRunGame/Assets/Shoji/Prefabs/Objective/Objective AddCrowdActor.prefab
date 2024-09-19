@@ -58,7 +58,7 @@ MonoBehaviour:
   arrow: {fileID: 6222445932931680281}
   group: {fileID: 226869014160522040}
   objective: {fileID: 2200646808845660221}
-  distance: 45
+  distance: 65
   crowd: {fileID: 0}
 --- !u!223 &6200095337308812336
 Canvas:

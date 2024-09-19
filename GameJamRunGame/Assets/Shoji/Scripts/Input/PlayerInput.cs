@@ -10,10 +10,14 @@ public class PlayerInput : MonoBehaviour
     InputCommand command;
     bool commandMode = false;
 
+    [SerializeField]
+    PhoneWarn warn;
+
     public void BeginInput()
     {
         crowd.BeginMove();
         StartCoroutine(ObserveModeChange());
+        warn.InitialWarn();
     }
     public void EndInput()
     {
@@ -21,6 +25,7 @@ public class PlayerInput : MonoBehaviour
         crowd.Stop();
         command.ForceEndCommand();
         StopAllCoroutines();
+        warn.EndWarn();
     }
     IEnumerator ObserveModeChange()
     {

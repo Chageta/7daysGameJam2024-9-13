@@ -257,8 +257,8 @@ public class CrowdControler : MonoBehaviour
         float timer = 0;
         while (cameraShakeAmount > 0)
         {
-            cameraShakeAmount = Mathf.Clamp(Mathf.Lerp(startCameraShakeAmount, 0, timer), 0, 3);
-            timer += Time.deltaTime;
+            cameraShakeAmount = Mathf.Clamp(Mathf.Lerp(startCameraShakeAmount, 0, timer), 0, 4);
+            timer += Time.deltaTime * 0.75f;
             foreach (var camera in cameras)
             {
                 camera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = cameraShakeAmount;
