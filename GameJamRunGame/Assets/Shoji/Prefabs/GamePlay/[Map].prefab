@@ -775,7 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffec11e93293cb84e9f1642625381855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleTriggerPrefab: {fileID: 1036581276884584617, guid: 8f1c377b18220b144a4d5cce83560ef9,
+  crossPrefab: {fileID: 4457654409717538197, guid: 7b029890629ad1f4293eec23c1198af1,
     type: 3}
 --- !u!1 &7612292562558675301
 GameObject:

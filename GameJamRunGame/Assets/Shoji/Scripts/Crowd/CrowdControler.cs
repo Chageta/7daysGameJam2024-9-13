@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class CrowdControler : MonoBehaviour
 {
@@ -11,14 +12,14 @@ public class CrowdControler : MonoBehaviour
 
     [SerializeField]
     Transform crowd;
+    public Transform Crowd => crowd;
     [SerializeField]
     CinemachineVirtualCamera[] cameras;
     int currentDirection, nextDirection;
     int moveSpeed = 1;
     readonly int[] kMoveSpeeds = { 0, 4, 8 };
+    int MoveSpeed(int speed) { return kMoveSpeeds[speed] + DifficultyManager.SpicyMoveSpeed(speed); }
 
-    readonly KeyCode[] kMoveKeys = new KeyCode[4]
-    {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
     readonly Vector3[] kMoveDirections = new Vector3[4]
     {Vector3.forward,Vector2.right,Vector3.back,Vector2.left};
 
@@ -49,6 +50,8 @@ public class CrowdControler : MonoBehaviour
 
     float cameraShakeAmount;
     Coroutine cameraShake;
+    [SerializeField]
+    Image screenRed;
 
     [SerializeField]
     AudioSource source;
@@ -173,9 +176,10 @@ public class CrowdControler : MonoBehaviour
     }
     int IsValidInput()
     {
-        for (int i = 0; i < kMoveKeys.Length; i++)
+        KeyCode[] moveKeys = PlayerInput.Keys;
+        for (int i = 0; i < moveKeys.Length; i++)
         {
-            if (Input.GetKeyDown(kMoveKeys[i])) return i;
+            if (Input.GetKeyDown(moveKeys[i])) return i;
         }
         //Debug.Log("[Crowd]Input Not Valid");
         return -1;
@@ -194,14 +198,14 @@ public class CrowdControler : MonoBehaviour
 
             while ((determination - crowd.position).sqrMagnitude > 0.01f)
             {
-                crowd.position = Vector3.MoveTowards(crowd.position, determination, kMoveSpeeds[moveSpeed] * Time.deltaTime);
+                crowd.position = Vector3.MoveTowards(crowd.position, determination, MoveSpeed(moveSpeed) * Time.deltaTime);
                 yield return null;
             }
         }
     }
     void MoveUntilDead()
     {
-        actors.ForEach(a => a.MoveUntilDead(kMoveDirections[currentDirection] * kMoveSpeeds[moveSpeed]));
+        actors.ForEach(a => a.MoveUntilDead(kMoveDirections[currentDirection] * MoveSpeed(moveSpeed)));
     }
     void CalcDetermination()
     {
@@ -255,15 +259,20 @@ public class CrowdControler : MonoBehaviour
         cameraShakeAmount += 1;
         float startCameraShakeAmount = cameraShakeAmount;
         float timer = 0;
+        yield return new WaitForFixedUpdate();
         while (cameraShakeAmount > 0)
         {
             cameraShakeAmount = Mathf.Clamp(Mathf.Lerp(startCameraShakeAmount, 0, timer), 0, 4);
-            timer += Time.deltaTime * 0.75f;
+            timer += Time.fixedDeltaTime * 0.5f;
             foreach (var camera in cameras)
             {
                 camera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = cameraShakeAmount;
             }
-            yield return null;
+            Color redColor = screenRed.color;
+            redColor.a = cameraShakeAmount;
+            screenRed.color = redColor;
+
+            yield return new WaitForFixedUpdate();
         }
     }
     void UpdateUI()

@@ -50,7 +50,7 @@ public class CommandUI : MonoBehaviour
     IEnumerator FailureShake()
     {
         float shakeTime = 0.75f;
-        while (shakeTime>0)
+        while (shakeTime > 0)
         {
             Vector2 shakePosition = Mathf.Clamp01(shakeTime * 4) * new Vector2(Mathf.Sin(Time.timeSinceLevelLoad * 7) * Random.Range(-6, 6), Mathf.Sin(Time.time * 5) * Random.Range(-6, 6));
             commandText.rectTransform.anchoredPosition = shakePosition;
@@ -64,8 +64,10 @@ public class CommandUI : MonoBehaviour
     }
     IEnumerator MoveCommandGauge()
     {
-        float timerStart;
-        float timer = timerStart = DifficultyManager.Instance.CommandTimer;
+        float timer = DifficultyManager.Instance.CommandTimer;
+        timer -= inputCommand.SuccessRate * 0.02f;
+        float timerStart = timer;
+
         commandGauge.fillAmount = 0;
         if (timer == -1) yield break;
         while (timer > 0)

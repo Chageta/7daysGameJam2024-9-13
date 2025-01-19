@@ -2,16 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class DifficultySelect : MonoBehaviour
 {
     [SerializeField]
     Image[] buttons;
     int buttonIndex;
-
-    readonly KeyCode[] kSelectKeys = new KeyCode[2]
-    {KeyCode.A,KeyCode.D};
 
     [SerializeField]
     Color inactiveColor, activeColor;
@@ -21,10 +17,6 @@ public class DifficultySelect : MonoBehaviour
 
     [SerializeField]
     GameObject[] infoTexts;
-
-    [SerializeField]
-    TMP_Text[] highScoresTexts;
-    static int[] highScores = new int[3] { int.MinValue, int.MinValue, int.MinValue };
 
     [SerializeField]
     AudioSource source;
@@ -45,11 +37,6 @@ public class DifficultySelect : MonoBehaviour
         }
         SetButtonActive(true);
         StartCoroutine(SelectButtons());
-        for (int i = 0; i < 3; i++)
-        {
-            string text = highScores[i] == int.MinValue ? "" : $"ハイスコア:{highScores[i]}";
-            highScoresTexts[i].text = text;
-        }
     }
     IEnumerator SelectButtons()
     {
@@ -89,14 +76,14 @@ public class DifficultySelect : MonoBehaviour
     }
     int IsValidInput()
     {
-        for (int i = 0; i < kSelectKeys.Length; i++)
+        KeyCode[] selectKeys = new KeyCode[2];
+        KeyCode[] input = PlayerInput.Keys;
+        selectKeys[0] = input[2];
+        selectKeys[1] = input[3];
+        for (int i = 0; i < selectKeys.Length; i++)
         {
-            if (Input.GetKeyDown(kSelectKeys[i])) return i;
+            if (Input.GetKeyDown(selectKeys[i])) return i;
         }
         return -1;
-    }
-    public static void SetHighScore(int score)
-    {
-        highScores[DifficultyManager.Instance.Difficulty] = Mathf.Max(highScores[DifficultyManager.Instance.Difficulty], score);
     }
 }

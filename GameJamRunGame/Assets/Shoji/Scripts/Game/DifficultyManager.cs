@@ -17,7 +17,13 @@ public class DifficultyManager : MonoBehaviour
     static readonly float[] kCommandTimer = new float[3]
     {-1,7,5 };
 
+    static bool isSpicy = false;
+    public bool IsSpicy { get => isSpicy; set => isSpicy = value; }
+    static readonly int[] spicyMoveSpeeds = new int[3] { 0, 2, 3 };
+    public static int SpicyMoveSpeed(int speed) { return isSpicy ? spicyMoveSpeeds[speed] : 0; }
+
     public int CommandLength => Random.Range(kDifficulty[difficulty].x, kDifficulty[difficulty].y);
+    public int CommandIntendedLength => difficulty == 0 ? 0 : Random.Range(kDifficulty[difficulty - 1].x, kDifficulty[difficulty - 1].y);
     public float CommandWait => kZombieTime[difficulty].x + Random.Range(0, kZombieTime[difficulty].y);
     public float CommandTimer => kCommandTimer[difficulty];
     public float CommandMinWait => kZombieTime[difficulty].x;

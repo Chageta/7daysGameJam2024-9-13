@@ -41,8 +41,8 @@ public class AutoBuilding : MonoBehaviour
                 bool isStadium = i == stadiumAddress.x && k == stadiumAddress.y;
                 bool isSubObjective = i == subObjectiveAddress.x && k == subObjectiveAddress.y && hasSubObjective;
                 GameObject building = isStadium ? stadium :
-                    isSubObjective ? subObjective :
-                    Instantiate(commonBuildings[Random.Range(0, commonBuildings.Length)], position, rotation, buildingRoot);
+                    (isSubObjective ? subObjective :
+                    Instantiate(commonBuildings[Random.Range(0, commonBuildings.Length)], position, rotation, buildingRoot));
                 building.transform.SetPositionAndRotation(position, rotation);
             }
         }

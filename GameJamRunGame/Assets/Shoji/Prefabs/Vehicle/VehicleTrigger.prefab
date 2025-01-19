@@ -54,6 +54,7 @@ MonoBehaviour:
   carDriveBy:
   - {fileID: 8300000, guid: 1f4fab2bf4112c94097548fcc35e8936, type: 3}
   - {fileID: 8300000, guid: 90914117bea4389408206ee74732a6f8, type: 3}
+  sphere: {fileID: 7056992119004429561}
 --- !u!135 &7056992119004429561
 SphereCollider:
   m_ObjectHideFlags: 0

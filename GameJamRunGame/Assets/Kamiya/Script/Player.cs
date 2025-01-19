@@ -63,12 +63,13 @@ public class Player : MonoBehaviour
 
     private void RotateHorizontal()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        KeyCode[] moveKeys = PlayerInput.Keys;
+        if (Input.GetKeyDown(moveKeys[3]))
         {
             // âEÇ…âÒì]Ç≥ÇπÇÈ
             transform.Rotate(0, 90, 0);
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(moveKeys[2]))
         {
             // ç∂Ç…âÒì]Ç≥ÇπÇÈ
             transform.Rotate(0, -90, 0);

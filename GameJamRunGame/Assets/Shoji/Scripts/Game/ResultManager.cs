@@ -18,6 +18,11 @@ public class ResultManager : MonoBehaviour
     {
         return DateTime.Now - startTime;
     }
+    public static void DieAt(Vector3 position)
+    {
+        Vector2Int pos = new(Mathf.RoundToInt(position.x / 80) + 3, Mathf.RoundToInt(position.z / 80) + 3);
+        DieAt(pos.x * 7 + pos.y);
+    }
     public static void DieAt(int index)
     {
         bloodPercent += (dieArray & (ulong)(1 << index)) == 0 ? 1 : 0;

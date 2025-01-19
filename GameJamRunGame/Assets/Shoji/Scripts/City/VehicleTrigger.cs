@@ -5,6 +5,9 @@ using UnityEngine;
 public class VehicleTrigger : MonoBehaviour
 {
     [SerializeField]
+    Cross cross;
+
+    [SerializeField]
     int spawnDistance;
     [SerializeField]
     Vehicle vehiclePrefab;
@@ -17,21 +20,42 @@ public class VehicleTrigger : MonoBehaviour
     [SerializeField]
     AudioClip[] carDriveBy;
 
+    const float kForceKillTime = 6;
+    [SerializeField]
+    SphereCollider sphere;
+
     private void OnTriggerEnter(Collider hit)
     {
         if (coolTime) return;
         if (hit.gameObject.layer != 9) return;
         CrowdActor actor = hit.GetComponent<CrowdActor>();
+        Invoke(nameof(ForceKillScan), kForceKillTime);
         if ((!actor.IsTexting && !outer) || actor.IsDead) return;
 
+        BeginSpawnVehicles();
+    }
+    void BeginSpawnVehicles()
+    {
         coolTime = true;
         StartCoroutine(CoolTime());
         StartCoroutine(SpawnVehicles());
     }
+    void ForceKillScan()
+    {
+        CancelInvoke();
+        Collider[] result = new Collider[1];
+        Physics.OverlapSphereNonAlloc(transform.position, sphere.radius, result, 1 << 9);
+        if (result[0] == null) return;
+
+        StopAllCoroutines();
+        BeginSpawnVehicles();
+    }
     IEnumerator CoolTime()
     {
+        cross.BeginLights(transform);
         yield return new WaitForSeconds(3);
         coolTime = false;
+        cross.EndLights(transform);
     }
     IEnumerator SpawnVehicles()
     {

@@ -13,6 +13,16 @@ public class PlayerInput : MonoBehaviour
     [SerializeField]
     PhoneWarn warn;
 
+    static bool useArrowKey = false;
+    static readonly KeyCode[] keys1 = new KeyCode[4]
+    {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
+    static readonly KeyCode[] keys2 = new KeyCode[4]
+    {KeyCode.UpArrow,KeyCode.DownArrow,KeyCode.LeftArrow,KeyCode.RightArrow};
+    public static KeyCode[] Keys => useArrowKey ? keys2 : keys1;
+    public static KeyCode[] Keys1 => keys1;
+    public static KeyCode[] Keys2 => keys2;
+    public static bool UseArrowKey { get => useArrowKey; set => useArrowKey = value; }
+
     public void BeginInput()
     {
         crowd.BeginMove();

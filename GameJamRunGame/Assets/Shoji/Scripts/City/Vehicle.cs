@@ -10,6 +10,10 @@ public class Vehicle : MonoBehaviour
 
     [SerializeField]
     ParticleSystem blood;
+    const float kDestoyWait = 5;
+    bool collide = false;
+    [SerializeField]
+    BoxCollider col;
 
     void Start()
     {
@@ -23,14 +27,29 @@ public class Vehicle : MonoBehaviour
     {
         transform.Translate(0, 0, speed * Time.deltaTime);
         if (Vector3.Dot(transform.localPosition - localPos, localPos) < 0) return;
-        Destroy(gameObject);
+
+        StartDestoy();
     }
     public void Collide()
     {
+        collide = true;
         blood.Play();
 
-        Vector2Int pos = new(Mathf.RoundToInt(transform.position.x / 80) + 3, Mathf.RoundToInt(transform.position.z / 80) + 3);
-        ResultManager.DieAt(pos.x * 7 + pos.y);
+        ResultManager.DieAt(transform.position);
+    }
+    void StartDestoy()
+    {
+        if (!collide)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        col.enabled = false;
+        for (int i = 0; i < 3; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
+        Destroy(gameObject, kDestoyWait);
     }
     public Vector3 Velocity => transform.TransformVector(0, 0, speed);
 }

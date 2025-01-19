@@ -14,8 +14,6 @@ public class InputCommand : MonoBehaviour
     int currentCommandIndex;
     int[] commands;
     bool commandFailureWait = false;
-    readonly KeyCode[] kCommandKeys = new KeyCode[4]
-    {KeyCode.W,KeyCode.S,KeyCode.A,KeyCode.D};
 
     [SerializeField]
     AudioSource commandSource;
@@ -25,9 +23,20 @@ public class InputCommand : MonoBehaviour
     [SerializeField]
     AudioClip successSE, failureSE;
 
+    bool commandIntendedWait = false;
+    int successRate = 0;
+    public int SuccessRate => successRate;
+
     public void BeginCommand()
     {
-        commands = new int[DifficultyManager.Instance.CommandLength];
+        int commandLength = DifficultyManager.Instance.CommandLength;
+        if (DifficultyManager.Instance.Difficulty == 2)
+        {
+            if (commandIntendedWait) commandLength += DifficultyManager.Instance.CommandIntendedLength;
+            commandLength += Mathf.Min(5, (int)ResultManager.Time().TotalSeconds / 45);
+        }
+
+        commands = new int[commandLength];
         for (int i = 0; i < commands.Length; i++)
         {
             commands[i] = Random.Range(0, 4);
@@ -49,12 +58,15 @@ public class InputCommand : MonoBehaviour
     IEnumerator CommandInput()
     {
         yield return new WaitWhile(() => commandFailureWait);
+        KeyCode[] commandKeys = PlayerInput.Keys;
         while (currentCommandIndex < commands.Length)
         {
+            StartCoroutine(nameof(CalcCommandIntendedWait));
             yield return new WaitUntil(() => Input.anyKeyDown);
             if (!IsValidInput()) continue;
+            StopCoroutine(nameof(CalcCommandIntendedWait));
 
-            if (Input.GetKeyDown(kCommandKeys[commands[currentCommandIndex]]))
+            if (Input.GetKeyDown(commandKeys[commands[currentCommandIndex]]))
             {
                 ui.CommandHit(++currentCommandIndex);
                 PlayCommandSE();
@@ -69,6 +81,7 @@ public class InputCommand : MonoBehaviour
         ui.SetActive(false);
         OnCommandSuccess.Invoke();
         commandSource.PlayOneShot(successSE);
+        if (DifficultyManager.Instance.Difficulty >= 2) successRate = Mathf.Min(successRate++, 100);
     }
     public void EndCommandFailureWait()
     {
@@ -76,7 +89,8 @@ public class InputCommand : MonoBehaviour
     }
     bool IsValidInput()
     {
-        foreach (var key in kCommandKeys)
+        KeyCode[] commandKeys = PlayerInput.Keys;
+        foreach (var key in commandKeys)
         {
             if (Input.GetKeyDown(key)) return true;
         }
@@ -97,5 +111,13 @@ public class InputCommand : MonoBehaviour
         OnCommandFailure.Invoke();
         commandFailureWait = true;
         commandSource.PlayOneShot(failureSE);
+        if (DifficultyManager.Instance.Difficulty >= 2) successRate = Mathf.Max(successRate--, 0);
+    }
+    IEnumerator CalcCommandIntendedWait()
+    {
+        commandIntendedWait = false;
+        if (currentCommandIndex < 3) yield break;
+        yield return new WaitForSeconds(1);
+        commandIntendedWait = true;
     }
 }

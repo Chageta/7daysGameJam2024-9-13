@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -224,7 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FadeSceneLoader: {fileID: 3234200379470231531}
-  sceneName_: SelectScene
+  source: {fileID: 0}
+  confirmSE: {fileID: 0}
 --- !u!114 &3234200379470231531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,5 +238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa8b7eb7985ccc4994ce301cd227564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
   fadePanel: {fileID: 6872003761545608600}
   fadeDuration: 1

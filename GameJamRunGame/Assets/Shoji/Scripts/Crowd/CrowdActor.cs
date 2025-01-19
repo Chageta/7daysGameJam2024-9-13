@@ -31,6 +31,9 @@ public class CrowdActor : MonoBehaviour
     [SerializeField]
     AudioClip[] phoneClips;
 
+    [SerializeField]
+    ParticleSystem spicyChicken;
+
     private void Awake()
     {
         skinRoot.GetChild(Random.Range(0, skinRoot.childCount)).gameObject.SetActive(true);
@@ -48,6 +51,12 @@ public class CrowdActor : MonoBehaviour
         Invoke("TurnIntoZombie", waitTime);
 
         OnDead += crowd.OnActorDead;
+
+        var col = blood.collision;
+        col.SetPlane(0, MapParticle.Plane);
+
+        if (!DifficultyManager.Instance.IsSpicy) return;
+        spicyChicken.gameObject.SetActive(true);
     }
     void TurnIntoZombie()
     {
@@ -61,6 +70,20 @@ public class CrowdActor : MonoBehaviour
     {
         CancelInvoke();
         float waitTime = DifficultyManager.Instance.CommandWait;
+        
+        if (DifficultyManager.Instance.Difficulty >= 2)
+        {
+            if (crowd.ActorCount > 15)
+            {
+                int reCalcTime = (crowd.ActorCount - 5) / 10;
+                while (reCalcTime > 0)
+                {
+                    reCalcTime--;
+                    waitTime = Mathf.Min(waitTime, DifficultyManager.Instance.CommandWait);
+                }
+            }
+        }
+
         Invoke("TurnIntoZombie", waitTime);
         anim.SetBool("isTexting", false);
         anim.SetLayerWeight(1, 0);
@@ -132,7 +155,7 @@ public class CrowdActor : MonoBehaviour
         rb.AddForce(velocity, ForceMode.Impulse);
         Die();
     }
-    void Die()
+    void Die(bool hasHone = true)
     {
         if (IsDead) return;
         StopAllCoroutines();
@@ -142,12 +165,13 @@ public class CrowdActor : MonoBehaviour
         phoneIcon.SetActive(false);
         Invoke("HideMesh", 1);
         blood.Play();
-        CrowdScreamer.Instance.Scream();
+        CrowdScreamer.Instance.Scream(hasHone);
 
         OnDead?.Invoke(this);
     }
     void HideMesh()
     {
+        ResultManager.DieAt(transform.position);
         skinRoot.gameObject.SetActive(false);
         Invoke("Destroy",20);
     }
@@ -157,4 +181,9 @@ public class CrowdActor : MonoBehaviour
     }
     public bool IsDead => anim.GetBool("isDead");
     public bool IsTexting => anim.GetBool("isTexting");
+    private void OnParticleCollision(GameObject other)
+    {
+        if (crowd == null) return;
+        Die(false);
+    }
 }

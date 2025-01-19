@@ -17,13 +17,14 @@ public class CrowdScreamer : MonoBehaviour
     {
         instance = this;
     }
-    public void Scream()
+    public void Scream(bool hasHone = true)
     {
         if (screamCount >= 5) return;
         if (screamCount == 0) Invoke("ScreamResetWait", 3);
         screamCount++;
         source.PlayOneShot(screams[Random.Range(0, screams.Length)]);
         source.PlayOneShot(collideClips[Random.Range(0, collideClips.Length)]);
+        if (!hasHone) return;
         source.PlayOneShot(hornClips[Random.Range(0, hornClips.Length)]);
     }
     void ScreamResetWait()
